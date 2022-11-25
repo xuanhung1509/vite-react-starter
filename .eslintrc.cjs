@@ -14,4 +14,12 @@ module.exports = {
     'react/jsx-no-useless-fragment': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+  },
 };
